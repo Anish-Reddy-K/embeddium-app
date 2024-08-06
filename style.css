@@ -118,7 +118,6 @@ h2 {
     align-items: center;
     margin-bottom: 2rem;
     transition: transform 0.3s ease;
-    cursor: pointer;
 }
 
 .text-logo {
@@ -132,7 +131,6 @@ h2 {
     transition: transform 0.3s ease;
     -webkit-user-drag: none;
     user-select: none;
-    cursor: pointer;
 }
 
 .logo-container:hover {
@@ -146,7 +144,6 @@ h2 {
     object-fit: contain;
     -webkit-user-drag: none;
     user-select: none;
-    cursor: pointer;
 }
 
 .download-button {

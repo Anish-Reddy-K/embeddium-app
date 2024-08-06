@@ -103,31 +103,4 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollToElement('about-features-ui');
     });
 
-    function downloadFile() {
-        // URL of the file on GitHub release
-        const fileUrl = "https://github.com/Anish-Reddy-K/embeddium/releases/download/v1.0.0/Embeddium.zip";
-        
-        const link = document.createElement('a');
-        link.href = fileUrl;
-        
-        link.download = 'Embeddium-1.0.0.zip'; 
-    
-        document.body.appendChild(link);
-        link.click();
-    
-        document.body.removeChild(link);
-    }
-    
-    // Add event listeners
-    document.getElementById('app-logo').addEventListener('click', downloadFile);
-    document.getElementById('text-logo').addEventListener('click', downloadFile);
-    document.getElementById('download-button').addEventListener('click', function(e) {
-        e.preventDefault();
-        downloadFile();
-    });
-    document.getElementById('header-download-button').addEventListener('click', function(e) {
-        e.preventDefault();
-        downloadFile();
-    });
-
 });
