@@ -104,11 +104,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function downloadFile() {
-        // Replace this URL with the actual URL of your file
-        const fileUrl = 'path/to/your/file.zip';
+        // Download file name
+        const fileUrl = 'Embeddium-1.0.0.zip';
         const link = document.createElement('a');
         link.href = fileUrl;
-        link.download = 'Embeddium.zip'; // Replace with your desired file name
+        link.download = 'embeddium-1.0.0.zip'; 
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
