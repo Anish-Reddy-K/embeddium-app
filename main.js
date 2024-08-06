@@ -104,25 +104,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function downloadFile() {
-        // Download file name
-        const fileUrl = 'Embeddium-1.0.0.zip';
+        // URL of the file on GitHub release
+        const fileUrl = 'https://github.com/Anish-Reddy-K/embeddium/releases/download/v1.0.0/Embeddium.zip';
+        
+        // Create a link element
         const link = document.createElement('a');
         link.href = fileUrl;
-        link.download = 'embeddium-1.0.0.zip'; 
+        
+        // Optional: If you want to specify a different file name for the download
+        link.download = 'Embeddium-1.0.0.zip'; 
+    
+        // Append link to the body and trigger the click event
         document.body.appendChild(link);
         link.click();
+    
+        // Remove the link from the document
         document.body.removeChild(link);
     }
-
+    
+    // Add event listeners
     document.getElementById('app-logo').addEventListener('click', downloadFile);
-
     document.getElementById('text-logo').addEventListener('click', downloadFile);
-
     document.getElementById('download-button').addEventListener('click', function(e) {
         e.preventDefault();
         downloadFile();
     });
-
     document.getElementById('header-download-button').addEventListener('click', function(e) {
         e.preventDefault();
         downloadFile();
